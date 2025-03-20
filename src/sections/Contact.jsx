@@ -100,7 +100,7 @@ const Contact = () => {
             </label>
             <label className="space-y-3">
               <span className="field-label">Your message</span>
-              <textArea
+              <textarea
                 name="message"
                 value={form.message}
                 onChange={handleChange}

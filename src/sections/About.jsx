@@ -1,6 +1,8 @@
 import Globe from "react-globe.gl";
 import Button from "../components/Button.jsx";
 import { useState } from "react";
+import earthDay from "/assets/earth-day.jpg";
+import earthNight from '/assets/earth-night.jpg';
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
@@ -13,7 +15,6 @@ const About = () => {
       setHasCopied(false);
     }, 2000);
   };
-
   return (
     <section className="c-space my-20" id="about">
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
@@ -81,7 +82,7 @@ const About = () => {
                 backgroundImageOpacity={0.5}
                 showAtmosphere
                 showGraticules
-                globeImageUrl={`//unpkg.com/three-globe/example/img/earth-${isMorning ? "day" : "night"}.jpg`}
+                globeImageUrl={isMorning ? earthDay : earthNight}
                 bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
               />
             </div>

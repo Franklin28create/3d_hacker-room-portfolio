@@ -1,7 +1,7 @@
 import { myProjects } from "../constants/index.js";
 import { Suspense, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import {Center, OrbitControls} from "@react-three/drei";
+import { Center, OrbitControls } from "@react-three/drei";
 import CanvasLoader from "../components/CanvasLoader.jsx";
 import DemoComputer from "../components/DemoComputer.jsx";
 
@@ -107,11 +107,11 @@ const Projects = () => {
             <Center>
               <Suspense fallback={<CanvasLoader />}>
                 <group scale={2} position={[0, -3, 0]} rotation={[0, -0.1, 0]}>
-                <DemoComputer texture={currentProject.texture}/>
+                  <DemoComputer texture={currentProject.texture} />
                 </group>
               </Suspense>
             </Center>
-            <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false}/>
+            <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false} />
           </Canvas>
         </div>
       </div>
