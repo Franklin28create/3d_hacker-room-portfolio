@@ -22,34 +22,6 @@ const Footer = () => {
             />
           </a>
         </div>
-        <div className="social-icon">
-          <a
-            href="https://x.com/Frankli81386809"
-            target="_blank"
-            rel="noreferrer"
-            className="flex justify-center align-center hover:scale-110 transition-all duration-300 ease-in-out"
-          >
-            <img
-              src="/assets/twitter.svg"
-              alt="twitter"
-              className="w-1/2 h-1/2"
-            />
-          </a>
-        </div>
-        <div className="social-icon">
-          <a
-            href="https://www.instagram.com/x._.mean_n_lean._.x/"
-            target="_blank"
-            rel="noreferrer"
-            className="flex justify-center align-center hover:scale-110 transition-all duration-300 ease-in-out"
-          >
-            <img
-              src="/assets/instagram.svg"
-              alt="linkedIn"
-              className="w-1/2 h-1/2"
-            />
-          </a>
-        </div>
       </div>
 
         <p className="text-white-500">&copy; 2025 Franklin. All rights reserved</p>

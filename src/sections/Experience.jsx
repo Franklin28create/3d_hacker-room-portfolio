@@ -30,7 +30,7 @@ const Experience = () => {
           <div className="work-content">
             <div className="sm:py-10 py-5 sm:px-5 px-2.5">
               {workExperiences.map(
-                ({ name, pos, duration, title, icon, animation, id }) => (
+                ({ name, pos, duration, title, icon, animation, id }, i) => (
                   <div
                     key={id}
                     className="work-content_container group"
@@ -42,7 +42,7 @@ const Experience = () => {
                   >
                     <div className="flex flex-col h-full justify-start items-center py-2">
                       <div className="work-content_logo">
-                        <img src={icon} alt="logo" className="w-full h-full" />
+                        <img src={icon} alt="logo" className={`w-full h-full invert`}/>
                       </div>
                       <div className="work-content_bar" />
                     </div>

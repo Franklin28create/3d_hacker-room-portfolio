@@ -21,16 +21,15 @@ const Contact = () => {
 
     try {
       emailjs.send(
-        "service_oesfnjv",
-        "template_9di6m9l",
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           user_name: form.name,
-          to_name: "Frank",
           user_email: form.email,
-          to_email: "frankrierar07@gmail",
           message: form.message,
+          reply_to: form.name,
         },
-        "Ztd5j9cQsa1GTpoQc",
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
       setLoading(false);
@@ -39,7 +38,7 @@ const Contact = () => {
         name: "",
         email: "",
         message: "",
-      })
+      });
     } catch (error) {
       setLoading(false);
       console.log(error);
@@ -48,10 +47,9 @@ const Contact = () => {
         name: "",
         email: "",
         message: "",
-      })
+      });
     }
   };
-
 
   return (
     <section className="c-space my-20" id="contact">
