@@ -2,8 +2,8 @@ import Button from "../components/Button.jsx";
 
 const CallToAction = () => {
   return (
-    <div className="text-white border border-gray-500 rounded-2xl h-[40vh] max-md:mx-4 mx-12 my-6 flex-1 bg-gray-700 py-4">
-      <div className="flex items-center flex-col h-full justify-between">
+    <div className="text-white border border-gray-500 rounded-2xl max-md:mx-4 mx-12 my-6 flex-1 bg-gray-700 py-4">
+      <div className="flex items-center flex-col h-full justify-between gap-4">
         <div>
           <p className="grid-subtext mb-1 !text-[12px] text-center">
             WANT TO LEARN MORE?
@@ -24,14 +24,14 @@ const CallToAction = () => {
           </p>
         </div>
 
-        <div className="flex gap-4">
+        <div className="flex gap-4 max-md:gap-2 max-md:max-w-[316px]">
           <a
             href="https://franks-projects.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Button
-              name="Island Portfolio Live Website"
+              name="Island E-Portfolio"
               containerClass="hover:bg-blue-700 transition-colors duration-500"
               isBeam
             />
@@ -42,7 +42,7 @@ const CallToAction = () => {
             rel="noopener noreferrer"
           >
             <Button
-              name="3D Portfolio Live Website"
+              name="Hacker Room E-Portfolio"
               containerClass="hover:bg-blue-700 transition-colors duration-500"
               isBeam
             />
